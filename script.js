@@ -1,3 +1,12 @@
+// Header burger
+let burgerButton = document.querySelector('.page-navigation__burger-button'),
+burgerMenu = document.querySelector('.page-navigation__nav-list')
+
+burgerButton.addEventListener('click', function() {
+  burgerButton.classList.toggle('page-navigation__burger-button--opened')
+  burgerMenu.classList.toggle('page-navigation__nav-list--opened')
+})
+
 $(document).ready(function(){
     $("a.nav-link, button.more").click(function(){
         $("html, body").animate({
@@ -16,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
     const callBack = document.getElementById('contacts');
     form.addEventListener('submit', formSend);
-    
+
     async function formSend(e) {
         e.preventDefault();
 
