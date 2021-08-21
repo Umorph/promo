@@ -340,8 +340,7 @@ section {
 .intro {
   width: 100%;
   min-height: 450px;
-  background-image: url("assets/img/background.png");
-  background-repeat: no-repeat;
+  background: url("assets/img/background.png") center no-repeat;
   background-size: cover;
 }
 
@@ -1236,6 +1235,7 @@ th:nth-child(even) {
   }
 
   .intro-content {
+    margin-top: 50px;
     justify-content: space-around;
   }
 
