@@ -261,6 +261,7 @@ section {
 
 .second-header-content {
   position: fixed;
+  z-index: 100;
   top: 60px;
   left: 0;
   width: 100%;
@@ -353,15 +354,15 @@ section {
   line-height: 60px;
   color: #ffffff;
 }
-/* 
+
 .hello-desc {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   color: #ffffff;
-} */
+}
 
-.hello-desc {
+.hello-desc-list {
   display: flex;
   flex-direction: column;
 }
@@ -501,9 +502,10 @@ section {
 
 .card-title {
   color: #212121;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  line-height: 25px;
 }
 
 .card-desc {
