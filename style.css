@@ -78,12 +78,6 @@ h6 {
 }
 /*--------------------*/
 
-.bigred {
-  font-size: 20px;
-  color: red;
-}
-
-
 /*Шрифты
 ====================*/
 @font-face {
@@ -267,6 +261,7 @@ section {
 
 .second-header-content {
   position: fixed;
+  z-index: 100;
   top: 60px;
   left: 0;
   width: 100%;
@@ -351,7 +346,6 @@ section {
 }
 
 .hello-text {
-  max-width: 700px;
   margin: 50px 0 0 0;
 }
 
@@ -368,9 +362,44 @@ section {
   color: #ffffff;
 }
 
+.hello-desc-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc-services {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px 0px 20px 0px;
+}
+
+.desc-service {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0px 0px 15px 0px;
+}
+
+.desc-service:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.list-icon {
+  width: 25px;
+  height: 25px;
+
+  margin: 0px 15px 0px 0px;
+}
+
+.desc-text {
+  color: #FFF;
+}
+
 .more {
   color: #212121;
-  margin: 75px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .more:hover {
@@ -413,7 +442,7 @@ section {
 
 .quality-title {
   color: #212121;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   line-height: 30px;
   width: 200px;
@@ -422,7 +451,7 @@ section {
 /*SERVICES*/
 
 .services {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 
 #left-title {
@@ -473,9 +502,10 @@ section {
 
 .card-title {
   color: #212121;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  line-height: 25px;
 }
 
 .card-desc {
